@@ -20,7 +20,6 @@ body.light{
     justify-content: center;
     align-items: center;
     background: #091921;
-    background-size: cover;
     border: 20px solid #091921;
     border-radius: 50%;
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.05),
@@ -30,7 +29,6 @@ body.light{
 }
 body.light .clock{
     background: #d1dae3;
-    background-size: cover;
     border: 20px solid #cad3dc;
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.5),
                 10px 10px 10px rgba(0, 0, 0, 0.3),
@@ -112,6 +110,7 @@ body.light .indicators div{
 .clock .min, 
 .clock .sec{
     position: absolute;
+    z-index: 10;
 }
 .hour, .hr{
     height: 160px;
@@ -177,7 +176,7 @@ body.light .time{
     color: #606060;
     border: 1px solid #CAD3E3;
     background: #CAD3E3;
-    box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.5);
 }
 .toggleClass{
     position: absolute;
